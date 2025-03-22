@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GueneyabéLinetZoua - Portfolio</title>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    alert("Bienvenue Sur le Site Web de Gueneyabé Linet Zoua !");
+    });
+</script>
+    <style>
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    color: #22c6ae;
+}
+
+.hero, .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-text, .about-text {
+    width: 50%;
+}
+
+.hero-text h2, .about h2 {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+}
+
+.hero-image img, .about-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00d1b2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.highlight {
+    color: #00d1b2;
+    font-weight: bold;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    text-align: left;
+ }
+ .footer-content {
+      max-width: 1200px;
+      margin: 0 auto; 
+}
+
+.right-align {
+    text-align: right; 
+}
+.right {
+    text-align: left; 
+    font-size: 25px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="left">GUENEYABE <strong style="color: rgb(15, 220, 213);"> LINET ZOUA</strong></h1> 
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="competence.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Je suis <strong style="color: rgb(15, 220, 213);"><span class="prenom">Linet Zoua</span></strong>, Développeur en devenir <br>passionné par le web et le design !</h2>
+            <a href="projet.html" class="btn">Voir mes projets</a>
+        </div>
+        <div class="hero-image">
+            <img src="accueil.jpg" alt="Développeur en action">
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+        <p>Designed by GUENEYABE LINET ZOUA With HTML CSS JS <p class="right-align">Tous droits réservés - 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

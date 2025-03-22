@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GueneyabéLinetZoua- Portfolio</title>
+    <script src="script.js">document.addEventListener("DOMContentLoaded", function () {
+        console.log("Portfolio chargé avec succès !");
+        });
+    </script>
+
+<style>
+
+    body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header {
+background-color: black;
+color: white;
+padding: 15px 50px;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+
+nav ul {
+list-style: none;
+text-align: center;
+}
+
+nav ul li {
+display: inline;
+margin: 0 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: white;
+font-size: 18px;
+}
+
+nav ul li a.active {
+color: #22c6ae;
+}
+
+.hero, .about {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 50px;
+}
+
+.hero-text, .about-text {
+width: 50%;
+}
+
+.hero-text h2, .about h2 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+.hero-image img, .about-image img {
+width: 100%;
+max-width: 400px;
+}
+nav ul li a.active {
+    color: #22c6ae;
+}
+.highlight {
+    color: #00d1b2;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+    text-align: left;
+ }
+ .footer-content {
+      max-width: 1200px; 
+}
+
+.right-align {
+    text-align: right; 
+            padding-right: 25px;
+            font-size: 19px;
+}
+.right {
+    text-align: left; 
+    font-size: 15px;
+    padding-left: 20px;
+}
+h2 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 0;
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-card .project-content {
+            padding: 20px;
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .project-button {
+    display: inline-block;
+    background-color: #00d1b2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+        }
+.project-button:hover {
+            background-color: #555;
+        }
+</style>    
+
+</head>
+<body>
+
+    <header>
+        <h1 class="left">GUENEYABE <strong style="color: rgb(15, 220, 213);"> LINET ZOUA</strong></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Àpropos</a></li>
+                <li><a href="projet.html" class="active">Projets</a></li>
+                <li><a href="competence.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 style="color:rgb(15, 243, 235)">Mes Projets</h2>
+    <section class="projects">
+        <div class="project-card">
+            <img src="projet1.jpg" alt="Projet 1">
+            <div class="project-content">
+                <h3>Projet 1</h3>
+                <p>Voici une brève description du projet 1.<br>Ce Projet consiste à Prendre Une date sous la forme "JJ-MM-AAAA" et calcule la difference en Jours entre la date Actuelle et la Date Saisie.</p>
+                <a href="calculatrice.html" style="color:rgb(15, 243, 235)" class="project-button">Voir</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="projet2.jpg" alt="Projet 2">
+            <div class="project-content">
+                <h3>Projet 2</h3>
+                <p>Voici Une description du Pojet 2.<br> Ce projet consiste à Traiter les nombre en entrée,nous calcul,affiche sa racine carrée et, prend une phrase et renvoie le nombre des mots, En plus affiche les Trois Prémier lettres.</p>
+                <a href="nbre.html" style="color:rgb(15, 243, 235)"class="project-button">Voir</a>
+            </div>
+        </div>
+     <div class="project-card">
+            <img src="projet3.jpg" alt="Projet 3">
+            <div class="project-content">
+                <h3>Projet 3</h3>
+                <p>Voici la description du Projet 3. <br>Le projet consiste à calculer le paiement Mensuel du pêt en fonction des valeurs saissies et afficher le paiement resultant dans une balise.</p>
+                <a href="calculateur.html" style="color:rgb(15, 243, 235)" class="project-button">Voir</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+        <p>Designed by GUENEYABE LINET ZOUA With HTML CSS JS <p class="right-align">Tous droits réservés - 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

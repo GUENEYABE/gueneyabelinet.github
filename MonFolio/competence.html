@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GueneyabéLinetZoua - Portfolio</title>
+    <script src="script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+console.log("Portfolio chargé avec succès !");
+});
+
+</script>
+    <style>
+
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    color: #22c6ae;
+}
+
+.hero, .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-text, .about-text {
+    width: 50%;
+}
+
+.hero-text h2, .about h2 {
+        font-family: Arial, sans-serif;
+        font-size: 25px;
+}
+
+.hero-image img, .about-image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00d1b2;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.highlight {
+    color: #00d1b2;
+    font-weight: bold;
+}
+
+.skills-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .skills-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .skill-card {
+            background-color: rgba(240, 243, 251, 0.638);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .skill-card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar {
+            background-color: rgb(48, 51, 51);
+            border-radius: 2px;
+            height: 10px;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar span {
+            display: block;
+height: 100%;
+            background-color: rgb(12, 205, 249);
+            border-radius: 5px;
+        }
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    text-align: left;
+ }
+ .footer-content {
+      max-width: 1200px;
+      margin: 0 auto; 
+}
+
+.right-align {
+    text-align: right; 
+}
+.right {
+    text-align: left; 
+    font-size: 25px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="left">GUENEYABE <strong style="color: rgb(15, 220, 213);"> LINET ZOUA</strong></h1> 
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projet.html">Projets</a></li>
+                <li><a href="competence.html"  class="active">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+<section class="skills-section">
+            <h2 class="skills-title">Mes Compétences</h2>
+            <div class="skills-container">
+    
+                <div class="skill-card">
+                    <h3>HTML & CSS</h3>
+                 <div class="progress-bar"><span style="width: 90%;"></span></div>
+                    <p>Connaissance approfondie du HTML5 et CSS3 pour le design web.</p>
+                </div>
+    
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar"><span style="width: 80%;"></span></div>
+                    <p>Développement d'interactions dynamiques sur les pages web avec JavaScript.</p>
+                </div>
+    
+                <div class="skill-card">
+                    <h3>PHP & MySQL</h3>
+                    <div class="progress-bar"><span style="width: 75%;"></span></div>
+                    <p>Création de sites web dynamiques avec PHP et gestion de bases de données avec MySQL.</p>
+                </div>
+    
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer-content">
+        <p>Designed by GUENEYABE LINET ZOUA With HTML CSS JS <p class="right-align">Tous droits réservés - 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
